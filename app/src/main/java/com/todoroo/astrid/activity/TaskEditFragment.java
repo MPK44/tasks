@@ -270,7 +270,7 @@ public final class TaskEditFragment extends InjectingFragment
         taskEditControlSetFragmentManager.getFragmentsInPersistOrder(getChildFragmentManager()))) {
       dialogBuilder
           .newMessageDialog(R.string.discard_confirmation)
-          .setPositiveButton(R.string.keep_editing, null)
+          .setPositiveButton(R.string.save, (dialog, which) -> save())
           .setNegativeButton(R.string.discard, (dialog, which) -> discard())
           .show();
     } else {
