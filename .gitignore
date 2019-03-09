@@ -6,3 +6,4 @@ build/
 local.properties
 Thumbs.db
 /captures/
+/sync.ffs_db
